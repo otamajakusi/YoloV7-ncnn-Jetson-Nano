@@ -42,10 +42,12 @@ int main(int argc, char** argv)
 
     cv::Mat m;
     cv::VideoCapture cap(0, cv::CAP_V4L2);
+#if 0 /* depends on your device */
     cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('Y','U','Y','V'));
     cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
     cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
     cap.set(cv::CAP_PROP_FPS, 25);
+#endif
     if (!cap.isOpened())
     {
         std::cerr << "Error opening video file\n";
