@@ -37,8 +37,6 @@
 			<Add option="-isystem" />
 			<Add option="-DNDEBUG" />
 			<Add option="-fPIE" />
-			<Add option="-fno-rtti" />
-			<Add option="-fno-exceptions" />
 			<Add option="-fopenmp" />
 			<Add option="-pthread" />
 			<Add directory="/usr/include/opencv4" />
